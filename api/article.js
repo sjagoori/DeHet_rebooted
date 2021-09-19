@@ -1,4 +1,4 @@
-export default async (req, res) => {
+module.exports = async (req, res) => {
   let word  = req.query.word
   let article = await fetch(`https://www.welklidwoord.nl/${word}`)
     .then(res => res.text())
